@@ -3040,10 +3040,10 @@ means of a recursive process.
 @quotation
 @strong{@anchor{Exercise 1-13}Exercise 1.13:} Prove that @emph{Fib}(@i{n}) is
 the closest integer to @i{[phi]}^@i{n}/@i{[sqrt]}(5), where @i{[phi]} = (1 +
-@i{[sqrt]}(5))/2.  Hint: Let @i{[illegiblesymbol]} = (1 - @i{[sqrt]}(5))/2.
+@i{[sqrt]}(5))/2.  Hint: Let @i{[psi]} = (1 - @i{[sqrt]}(5))/2.
 Use induction and the definition of the Fibonacci numbers (see section
 @ref{1-2-2}) to prove that @emph{Fib}(@i{n}) = (@i{[phi]}^@i{n} -
-@i{[illegiblesymbol]}^@i{n})/@i{[sqrt]}(5).
+@i{[psi]}^@i{n})/@i{[sqrt]}(5).
 @end quotation
 
 @node	1-2-3, 1-2-4, 1-2-2, 1-2
