@@ -3282,10 +3282,10 @@ an iterative exponentiation process that uses successive squaring and uses a
 logarithmic number of steps, as does @code{fast-expt}.  (Hint: Using the
 observation that (@i{b}^(@i{n}/2))^2 = (@i{b}^2)^(@i{n}/2), keep, along with
 the exponent @i{n} and the base @i{b}, an additional state variable @i{a}, and
-define the state transformation in such a way that the product @i{a}
-@i{b}^@i{n} is unchanged from state to state.  At the beginning of the process
-@i{a} is taken to be 1, and the answer is given by the value of @i{a} at the
-end of the process.  In general, the technique of defining an
+define the state transformation in such a way that the product
+@i{a}@w{ }@i{b}^@i{n} is unchanged from state to state.  At the beginning of
+the process@i{a} is taken to be 1, and the answer is given by the value of
+@i{a} at the end of the process.  In general, the technique of defining an
 @newterm{invariant quantity} that remains unchanged from state to state is a
 powerful way to think about the design of iterative algorithms.)
 @end quotation
@@ -3437,11 +3437,11 @@ compute the @acronym{GCD} of some pair, then the smaller number in the pair
 must be greater than or equal to the @i{k}th Fibonacci number.@footnote{This
 theorem was proved in 1845 by Gabriel Lam@'e, a French mathematician and
 engineer known chiefly for his contributions to mathematical physics.  To prove
-the theorem, we consider pairs (@i{a}_@i{k} ,@i{b}_@i{k}), where @i{a}_@i{k}>=
+the theorem, we consider pairs (@i{a}_@i{k}, @i{b}_@i{k}), where @i{a}_@i{k} >=
 @i{b}_@i{k}, for which Euclid's Algorithm terminates in @i{k} steps.  The proof
 is based on the claim that, if (@i{a}_(@i{k}+1), @i{b}_(@i{k}+1)) ->
 (@i{a}_@i{k}, @i{b}_@i{k}) -> (@i{a}_(@i{k}-1), @i{b}_(@i{k}-1)) are three
-successive pairs in the reduction process, then we must have @i{b}_(@i{k}+1)>=
+successive pairs in the reduction process, then we must have @i{b}_(@i{k}+1) >=
 @i{b}_@i{k} + @i{b}_(@i{k}-1).  To verify the claim, consider that a reduction
 step is defined by applying the transformation @i{a}_(@i{k}-1) = @i{b}_@i{k},
 @i{b}_(@i{k}-1) = remainder of @i{a}_@i{k} divided by @i{b}_@i{k}.  The second
