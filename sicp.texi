@@ -4483,7 +4483,7 @@ between @i{x} and @i{b}.  Continuing in this way, we can identify smaller and
 smaller intervals on which @i{f} must have a zero.  When we reach a point where
 the interval is small enough, the process stops.  Since the interval of
 uncertainty is reduced by half at each step of the process, the number of steps
-required grows as @i{[theta]}(@code{log}( @i{L}/@i{T})), where @i{L} is the
+required grows as @i{[theta]}(@code{log}(@i{L}/@i{T})), where @i{L} is the
 length of the original interval and @i{T} is the error tolerance (that is, the
 size of the interval we will consider ``small enough'').  Here is a procedure
 that implements this strategy:
@@ -4800,14 +4800,15 @@ We can express the idea of average damping by means of the following procedure:
 @code{Average-damp} is a procedure that takes as its argument a procedure
 @code{f} and returns as its value a procedure (produced by the @code{lambda})
 that, when applied to a number @code{x}, produces the average of @code{x} and
-@code{(f x)}.  For example, applying @code{average-damp} to the @code{square}
-procedure produces a procedure whose value at some number @i{x} is the average
-of @i{x} and @i{x}^2.  Applying this resulting procedure to 10 returns the
-average of 10 and 100, or 55:@footnote{Observe that this is a combination whose
-operator is itself a combination.  @ref{Exercise 1-4} already demonstrated the
-ability to form such combinations, but that was only a toy example.  Here we
-begin to see the real need for such combinations---when applying a procedure
-that is obtained as the value returned by a higher-order procedure.}
+@code{(f@w{ }x)}.  For example, applying @code{average-damp} to the
+@code{square} procedure produces a procedure whose value at some number @i{x}
+is the average of @i{x} and @i{x}^2.  Applying this resulting procedure to 10
+returns the average of 10 and 100, or 55:@footnote{Observe that this is a
+combination whose operator is itself a combination.  @ref{Exercise 1-4} already
+demonstrated the ability to form such combinations, but that was only a toy
+example.  Here we begin to see the real need for such combinations---when
+applying a procedure that is obtained as the value returned by a higher-order
+procedure.}
 
 @lisp
 ((average-damp square) 10)
