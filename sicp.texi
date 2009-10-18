@@ -5641,7 +5641,7 @@ rational-number package.
         +------------------------------------+
 --------| Programs that use rational numbers |--------
         +------------------------------------+
-          Rational numbers in promblem domain
+          Rational numbers in problem domain
             +---------------------------+
 ------------|   add-rat  sub-rat  ...   |-------------
             +---------------------------+
